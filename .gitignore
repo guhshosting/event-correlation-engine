@@ -1,0 +1,6 @@
+/build*/
+/artifacts/
+/dist/
+/live.json
+/cppcheck.txt
+/clang-tidy.txt

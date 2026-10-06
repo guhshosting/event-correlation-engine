@@ -1,0 +1,5 @@
+# MSVC map move construction allocates a sentinel. Explicit potentially throwing
+# moves are correct here; unsafe-to-allow-exceptions assumes moves cannot throw.
+Checks: '-*,clang-analyzer-*,bugprone-*,-bugprone-unsafe-to-allow-exceptions'
+WarningsAsErrors: '*'
+HeaderFilterRegex: '.*[/\\](src|tests)[/\\].*'
